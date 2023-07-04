@@ -1,0 +1,11 @@
+.butt:hover{
+    background-color: skyblue !important;
+}
+.butt{
+    background-color: blue !important;
+
+}
+.buttondiv{
+    display: flex;
+    justify-content: center;
+}

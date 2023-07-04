@@ -1,0 +1,133 @@
+[
+  {
+    "category": "HOME",
+    "data": [
+      {
+        "subCategory": "Maintenance",
+        "data": [
+          "Painting / Drywall",
+          "General / Handyman",
+          "Cleaning",
+          "Driveway / Garage",
+          "Doors / Windows",
+          "Curtains / Blinds"
+        ]
+      },
+      {
+        "subCategory": "Appliances",
+        "data": [
+          "HVAC",
+          "Refrigerator",
+          "Washer",
+          "Dryer",
+          "Dishwasher",
+          "Range / Oven"
+        ]
+      },
+      {
+        "subCategory": "Remodeling",
+        "data": [
+          "Carpentry",
+          "Roofing",
+          "Flooring",
+          "Electrical",
+          "Plumbing",
+          "Masonry"
+        ]
+      },
+      {
+        "subCategory": "Misc / Other",
+        "data": ["Misc / Other"]
+      }
+    ]
+  },
+  {
+    "category": "AUTO",
+    "data": [
+      {
+        "subCategory": "Body",
+        "data": [
+          "Detailing / Polishing",
+          "Tinting",
+          "Cleaning",
+          "Paint",
+          "Panels",
+          "Upholstery"
+        ]
+      },
+      {
+        "subCategory": "Electrical",
+        "data": [
+          "Lights",
+          "Plugs / Coils",
+          "Windows / Locks",
+          "Alternator",
+          "Hybrid Batteries"
+        ]
+      },
+      {
+        "subCategory": "Mechanical",
+        "data": [
+          "Wipers and blades",
+          "Brakes",
+          "Steering / Suspension",
+          "A / C",
+          "Engine / Transmission"
+        ]
+      },
+      {
+        "subCategory": "Diagnostics / Other",
+        "data": ["Misc / Other"]
+      }
+    ]
+  },
+  {
+    "category": "YARD",
+    "data": [
+      {
+        "subCategory": "YARD",
+        "data": [
+          "Lawn / Hedges",
+          "Digging / Planting",
+          "Brush / Debris Removal",
+          "Fences / Walls",
+          "Tree Trimming / Removal",
+          "Pools / Hot Tub"
+        ]
+      }
+    ]
+  },
+  {
+    "category": "INDUSTRIAL",
+    "data": [
+      {
+        "subCategory": "INDUSTRIAL",
+        "data": [
+          "HVAC",
+          "Roofing",
+          "Flooring",
+          "Electrical",
+          "Plumbing",
+          "Parking lot",
+          "Other / Misc"
+        ]
+      }
+    ]
+  },
+  {
+    "category": "OTHER",
+    "data": [
+      {
+        "subCategory": "OTHER",
+        "data": [
+          "Assembly",
+          "Moving",
+          "Electronics Repair",
+          "Small Engine Repair",
+          "Welding",
+          "Other / Misc"
+        ]
+      }
+    ]
+  }
+]

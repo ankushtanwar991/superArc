@@ -1,0 +1,174 @@
+/* Need Help */
+
+.grid_sec {
+  gap: 2rem;
+  display: grid;
+  /* grid-template-columns: repeat(5, 1fr); */
+  grid-template-columns: repeat(auto-fill, 200px);
+}
+
+.inner {
+  width: 100%;
+  aspect-ratio: 1/1;
+  transition: 0.25s;
+  cursor: pointer;
+  border-radius: 15px;
+  background-size: cover;
+  background-position: center;
+  margin: auto;
+}
+
+.inner:hover {
+  box-shadow: 5px 5px #303030;
+  transform: translate(-5px, -5px);
+}
+
+.main_list {
+  position: relative;
+}
+
+.nested_list {
+  width: 15rem;
+  padding: 1rem;
+  text-align: left;
+  border-radius: 15px;
+  background-color: lightblue;
+}
+
+.comp_inner {
+  height: 75px;
+  cursor: pointer;
+  border-radius: 15px;
+  background-size: cover;
+  background-position: center;
+}
+
+.icon_img {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+.inner_list {
+  margin: 1rem 0;
+  padding: 1rem;
+  text-align: left;
+  border-radius: 15px;
+  background-color: yellow;
+}
+
+.inner_list p {
+  padding: 0.5rem 1rem;
+  border-radius: 100px;
+}
+
+.inner_list p:hover {
+  color: white;
+  cursor: pointer;
+  background-color: blue;
+}
+
+.inner_SubList p:hover {
+  background-color: green;
+}
+
+/* New Service Request */
+
+.iframe_map {
+  border: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.desc_box {
+  border: 0;
+  width: 100%;
+  padding: 15px;
+  outline: inherit;
+  font-size: 1rem;
+  border-radius: 5px;
+  background-color: lightgray;
+}
+
+.top_box {
+  display: flex;
+}
+
+.top_box_inner {
+  /* width: 18vw; */
+  gap: 0.5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* border:1px solid black;  */
+  /* margin: 4px; */
+}
+
+.inner_img {
+  height: 70px;
+  width: 100px;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
+.image_upload img {
+  height: 10rem;
+  cursor: pointer;
+  margin-right: 0.25rem;
+}
+
+.pop_show {
+  width: 50%;
+}
+
+.parent_container {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.child_container {
+  height: 100vh;
+  padding: 1rem;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+@media only screen and (max-width: 500px) {
+  .parent_container {
+    height: auto;
+    overflow: scroll;
+  }
+
+  .child_container {
+    height: auto;
+    overflow: auto;
+  }
+
+  .grid_sec {
+    display: block;
+  }
+
+  .iframe_map {
+    aspect-ratio: 1/1.5;
+  }
+
+  .pop_show {
+    width: 100%;
+  }
+
+  .nested_list {
+    width: 100%;
+    margin-left: 0;
+    position: static;
+  }
+
+  .inner {
+    width: 80%;
+    cursor: pointer;
+    aspect-ratio: 1/1;
+    transition: 0.25s;
+    border-radius: 15px;
+    background-size: cover;
+    background-position: center;
+    margin: auto;
+  }
+}

@@ -1,0 +1,133 @@
+.tab_sec {
+  gap: 1rem;
+  margin: 0.5rem 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.tab_sec div {
+  padding: 0.25rem;
+  text-align: center;
+  border-radius: 100px;
+}
+
+.tab_one {
+  border: 2px solid yellow;
+  background-color: lightyellow;
+}
+
+.tab_one_selected {
+  border: 2px solid yellow;
+  background-color: yellow;
+}
+
+.tab_two {
+  border: 2px solid green;
+  background-color: lightgreen;
+}
+
+.tab_two_selected {
+  border: 2px solid green;
+  background-color: green;
+}
+
+.tab_two_selected p,
+.tab_three_selected p {
+  color: white;
+}
+
+.tab_three {
+  border: 2px solid blue;
+  background-color: lightblue;
+}
+
+.tab_three_selected {
+  border: 2px solid blue;
+  background-color: blue;
+}
+
+.card_text {
+  font-size: 14px;
+  background: rgb(202, 245, 202);
+  color: green;
+  border-radius: 10px;
+}
+/* Map Card Component */
+
+.map_card {
+  width: 15rem;
+  height: 15rem;
+  padding: 1rem;
+  margin-left: -6rem;
+  margin-top: -14rem;
+  text-align: center;
+  background-size: contain;
+  background-image: url("/public/images/map_img.png");
+}
+
+.footer {
+  display: none;
+}
+.btn {
+  padding: 10px 15px;
+  border: 1px solid blue;
+  color: white;
+  background: blue;
+  border-radius: 5px;
+}
+.btn:hover {
+  background: none;
+  color: blue;
+}
+.btn1 {
+  padding: 10px 15px;
+  border: 1px solid black;
+  color: black;
+  background: yellow;
+  border-radius: 5px;
+}
+.btn1:hover {
+  background: none;
+  color: black;
+}
+@media only screen and (max-width: 500px) {
+  .tab_sec div {
+    border-radius: 0;
+  }
+  .header_text_size {
+    font-size: 12px;
+  }
+  .footer {
+    display: block;
+    margin-top: 80px;
+  }
+  .btn {
+    padding: 10px 15px;
+    border: 1px solid blue;
+    color: white;
+    background: blue;
+    border-radius: 5px;
+  }
+  .btn:hover {
+    background: none;
+    color: blue;
+  }
+  .btn1 {
+    padding: 10px 15px;
+    border: 1px solid yellow;
+    color: black;
+    background: yellow;
+    border-radius: 5px;
+  }
+  .btn1:hover {
+    background: none;
+    color: yellow;
+  }
+  .topbar {
+    padding: 10px;
+    color: white;
+    text-align: center;
+    background: gray;
+    margin: 0;
+  }
+}

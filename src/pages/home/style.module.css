@@ -1,0 +1,47 @@
+.grid_sec {
+  gap: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 0 0 50px 0;
+}
+
+.grid_sec div {
+  width: 100%;
+  display: flex;
+  aspect-ratio: 1/1;
+  border-radius: 20px;
+  align-items: center;
+  justify-content: center;
+  background-size: contain;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.grid_sec .left {
+  background-image: url(/public/images/consumer.png);
+  background-color: yellow;
+  transition: 0.25s;
+}
+
+.grid_sec .right {
+  background-image: url(/public/images/contractor.png);
+  background-color: blue;
+  transition: 0.25s;
+}
+
+.grid_sec .left:hover,
+.grid_sec .right:hover {
+  transform: translate(-5px, -5px);
+  box-shadow: 10px 10px #303030;
+}
+
+@media only screen and (max-width: 500px) {
+  .grid_sec {
+    display: block;
+  }
+
+  .grid_sec div {
+    width: 70vw;
+    margin: 2rem auto;
+  }
+}

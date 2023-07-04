@@ -1,0 +1,59 @@
+.custom_btn1{
+    color:red;
+    padding: 12px 0;
+    border:1px solid red;
+    width: 100%;
+    border-radius: 20px;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.custom_btn1:hover{
+    background: red;
+    color: white;
+    transition: 0.3s ease;
+}
+.custom_btn2{
+    color:white;
+    padding: 12px 0;
+    background: green;
+    border:1px solid green;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 20px;
+    transition: 0.3s ease;
+}
+.custom_btn2:hover{
+    background: none;
+    color: green;
+    transition: 0.3s ease;
+}
+experience_width{
+    width: 560px;
+    border-radius: 2px solid red;
+}
+
+.addedBox{
+    border: 1px solid rgb(201, 199, 199);
+    border-radius: 5px;
+}
+
+.custom_btn3{
+    color:white;
+    padding: 12px 20px;
+    background: red;
+    cursor: pointer;
+    border:1px solid red;
+    *width: 100%;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+.text{
+    padding: 10px 0;
+    font-weight: 600;
+}
+
+.text1{
+    font-weight: 600;
+    color: rgb(133, 132, 132);
+}
