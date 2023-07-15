@@ -106,7 +106,7 @@ export const OpenService = () => {
               nearestDate = max.diff(moment(), "days")
             }
           });
-
+          console.log(e)
           getDocumentData("users", e.userId).then((r) => {
 
             const obj = {

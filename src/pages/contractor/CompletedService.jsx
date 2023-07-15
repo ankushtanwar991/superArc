@@ -179,11 +179,14 @@ export function CompletedService() {
     }
   };
   useEffect(() => {
-    getData(userData);
-    getUser();
-    getDocumentData("users", userData.uid)
-      .then((res) => setContractor(res))
-      .catch((e) => console.log(e));
+    if(userData){
+
+      getData(userData);
+      getUser();
+      getDocumentData("users", userData.uid)
+        .then((res) => setContractor(res))
+        .catch((e) => console.log(e));
+    }
   }, [userData]);
   useEffect(() => {
     storeData();

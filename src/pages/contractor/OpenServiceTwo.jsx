@@ -243,7 +243,8 @@ export const OpenServiceTwo = () => {
     }
   };
   useEffect(() => {
-    getDocumentData("jobs", id)
+    if(userData){
+      getDocumentData("jobs", id)
       .then((res) => setData(res))
       .catch((err) => console.log(err));
 
@@ -272,6 +273,8 @@ export const OpenServiceTwo = () => {
         setContractor(res);
       }
     });
+    }
+    
   }, [userData]);
 
   useEffect(() => {
