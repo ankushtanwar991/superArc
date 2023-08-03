@@ -432,7 +432,7 @@ export const ConstructorProfile = () => {
                   </Box>
                 </Grid>
               </Grid>
-
+{/* 
               <Grid container px={3} py={2} my={2} className={style.addedBox}>
                 <Grid item md={12}>
                   <Typography className={style.text1}>
@@ -464,7 +464,7 @@ export const ConstructorProfile = () => {
                     <></>
                   )}
                 </Grid>
-              </Grid>
+              </Grid> */}
               <Grid container>
                 <Grid item md={6} sm={6} xs={12} px={1} py={1}>
                   <button

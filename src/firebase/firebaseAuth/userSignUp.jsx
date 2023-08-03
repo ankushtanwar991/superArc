@@ -13,9 +13,9 @@ import { SignUp } from "../../pages";
 
 // SignUp users using their Email and Password
 export const emailPasswordSignUp = async (name, mail, pass) => {
+  console.log(auth.currentUser)
   const res = await createUserWithEmailAndPassword(auth, mail, pass)
     .then(() => {
-      console.log(auth.currentUser)
       updateProfile(auth.currentUser, { displayName: name }).then((res1) =>{
         console.log(res1)
         sendEmailVerification(auth.currentUser).then((res) => {

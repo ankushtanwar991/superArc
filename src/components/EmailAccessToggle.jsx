@@ -86,7 +86,7 @@ export const EmailAccessToggle = () => {
                     checked={toggle} onChange={emailAcccessToggle} />
             </Tooltip>
             {toggle ? 'ON' : 'OFF'} */}
-            <Tooltip title={`Email Notifications (${toggle ? 'ON' : 'OFF'})`} placement="left-end">
+            {/* <Tooltip title={`Email Notifications (${toggle ? 'ON' : 'OFF'})`} placement="left-end">
 
                 <FormGroup>
                     <FormControlLabel
@@ -94,7 +94,7 @@ export const EmailAccessToggle = () => {
                         label={toggle ? 'ON' : 'OFF'}
                     />
                 </FormGroup>
-            </Tooltip>
+            </Tooltip> */}
 
 
 

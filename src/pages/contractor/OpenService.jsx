@@ -106,16 +106,18 @@ export const OpenService = () => {
               nearestDate = max.diff(moment(), "days")
             }
           });
-          console.log(e)
           getDocumentData("users", e.userId).then((r) => {
+            console.log(r)
+            let obj;
+          if(r!==undefined){
 
-            const obj = {
+            obj = {
               category: e.category,
               submitDate: moment
                 .unix(e.submitDate.seconds)
                 .format("Do MMM YYYY"),
               daysAgo: nearestDate,
-              userName: r.userName !== undefined ? r.userName : "",
+              userName: r.userName ? r.userName : "",
               description: e.description,
               city: e.city,
               lang: e.lang,
@@ -126,7 +128,6 @@ export const OpenService = () => {
               status: e.status,
             };
             arr.push(obj);
-
             if (obj.daysAgo < -14) {
               getMatchingData("offers", "jobId", "==", obj.id).then(res => {
                 res.forEach(e => deleteDocument("offers", e.id))
@@ -136,6 +137,8 @@ export const OpenService = () => {
             if (obj.status === "pending" && obj.daysAgo >= -14) {
               setJobs((jobs) => [...jobs, obj]);
             }
+          }
+
           });
         });
       })
@@ -413,7 +416,7 @@ export const OpenService = () => {
                           img={e.photo}
                           rate={e.rate}
                           days={e.daysAgo}
-                          name={e.userName}
+                          name={e.userName?e.userName:""}
                           date={e.submitDate}
                           estimate={estimates}
                           category={e.category}
@@ -435,7 +438,7 @@ export const OpenService = () => {
                           img={e.photo}
                           rate={e.rate}
                           days={e.daysAgo}
-                          name={e.userName}
+                          name={e.userName?e.userName:""}
                           date={e.submitDate}
                           estimate={estimates}
                           category={e.category}

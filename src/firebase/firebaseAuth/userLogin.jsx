@@ -24,14 +24,13 @@ export const googleLogin = async () => {
       email: res.user.email,
       userName: res.user.displayName,
       photo: res.user.photoURL,
-      isActive:false,
+      isActive:true,
     }
     getDocumentData("users", res.user.uid).then((res1) => {
       if (res1 === undefined) {
         createDocument("users", res.user.uid, obj).then(r => console.log(r)).catch(err => console.log(err))
       }
     })
-
   }).catch(() =>
   alert("Error occurred while logging in with Google")
   );

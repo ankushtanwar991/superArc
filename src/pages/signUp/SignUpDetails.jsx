@@ -77,7 +77,7 @@ export const SignUpDetails = () => {
                 userId: user.uid,
                 email: user.email,
                 userName: signUpData.name1,
-                isActive: false
+                isActive: true
               };
               createDocument("users", user.uid, data)
                 .then(() => navigate("/"))
@@ -119,7 +119,7 @@ export const SignUpDetails = () => {
                 userId: user.uid,
                 email: user.email,
                 userName: signUpData.name1,
-                isActive: false
+                isActive: true
               };
               createDocument("users", user.uid, data)
                 .then(() => navigate("/"))

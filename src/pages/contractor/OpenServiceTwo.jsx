@@ -455,9 +455,10 @@ export const OpenServiceTwo = () => {
               </Typography>
               <br />
               <Box sx={{ display: "flex", alignItems: "center" }}>
+                {console.log(customer)}
                 <Avatar
                   style={{ width: 55, height: 55 }}
-                  src={customer.photo || ""}
+                  src={customer?customer.photo: ""}
                   alt={customer.userName}
                 />
                 <Box sx={{ ml: 2, mt: 3 }}>

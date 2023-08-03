@@ -202,7 +202,7 @@ export const ConsumerProfile = () => {
 
 
 
-              <div className={style.text}>
+              {/* <div className={style.text}>
                 <span>Membership Plans :- </span>
               </div>
               <Grid container px={3} py={2} className={style.addedBox}>
@@ -214,7 +214,7 @@ export const ConsumerProfile = () => {
                     <button className={style.custom_btn3} onClick={() => cancelPlan()}>Cancel Plan</button>
                   </>) : (<></>)}
                 </Grid>
-              </Grid>
+              </Grid> */}
               <br />
               <Grid container>
                 <Grid item md={6} sm={6} xs={12} px={1} py={1}>
